@@ -55,3 +55,28 @@
 - Time Complexity: O(n)
 - Space Complexity: O(1)
 - Pattern: Segment Reversal + Index Manipulation
+
+---
+
+### 6. Move Zeroes to End
+- Approach: Two-pointer stable compaction
+- Idea:
+  - Maintain pointer `j` for next non-zero position
+  - Traverse array with `i`
+  - When `arr[i] != 0`, place it at index `j`
+  - Increment `j`
+  - Avoid unnecessary swaps when `i == j`
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
+---
+
+### 7. Remove Duplicates from Sorted Array
+- Approach: Two-pointer overwrite technique
+- Idea:
+  - Maintain pointer `j` for last unique element
+  - Traverse array with `i` starting from index 1
+  - If `arr[i] != arr[j]`, increment `j` and overwrite
+  - Return `j + 1` as new length
+- Time Complexity: O(n)
+- Space Complexity: O(1)

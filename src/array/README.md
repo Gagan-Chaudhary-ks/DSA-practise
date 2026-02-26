@@ -80,3 +80,14 @@
   - Return `j + 1` as new length
 - Time Complexity: O(n)
 - Space Complexity: O(1)
+
+---
+
+### 8. Check if Array is Sorted
+- Approach: Single traversal comparison
+- Idea:
+  - Traverse array once
+  - If `arr[i] > arr[i+1]` at any point, return false
+  - Otherwise return true
+- Time Complexity: O(n)
+- Space Complexity: O(1)

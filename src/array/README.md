@@ -91,3 +91,48 @@
   - Otherwise return true
 - Time Complexity: O(n)
 - Space Complexity: O(1)
+
+---
+
+### 9. Check if Array is Sorted and Rotated
+- Approach: Circular traversal with break counting
+- Idea:
+  - Traverse array circularly using `(i+1) % n`
+  - Count occurrences where `arr[i] > arr[(i+1) % n]`
+  - If count ≤ 1, array is valid sorted + rotated
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
+---
+
+### 10. Find Missing Number (0 to n) – Summation Method
+- Approach: Mathematical summation formula
+- Idea:
+  - Compute expected sum using `n * (n + 1) / 2`
+  - Compute actual sum of array elements
+  - Missing number = expectedSum - actualSum
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
+---
+
+### 11. Find Missing Number (0 to n) – XOR Method
+- Approach: Bit manipulation using XOR
+- Idea:
+  - Initialize `xor = n`
+  - Traverse array and apply `xor = xor ^ i ^ arr[i]`
+  - Matching numbers cancel out
+  - Remaining value is the missing number
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+
+---
+
+### 12. Maximum Consecutive Ones
+- Approach: Single traversal with streak counting
+- Idea:
+  - Maintain `currentCount` for ongoing streak of 1s
+  - Reset count when 0 is encountered
+  - Update `maxCount` while incrementing
+- Time Complexity: O(n)
+- Space Complexity: O(1)

@@ -136,3 +136,15 @@
   - Update `maxCount` while incrementing
 - Time Complexity: O(n)
 - Space Complexity: O(1)
+
+---
+
+### 13. Two Sum (HashMap – Optimal)
+- Approach: Hashing with complement lookup
+- Idea:
+  - Traverse array once
+  - Compute `complement = target - arr[i]`
+  - If complement exists in HashMap, return stored index and current index
+  - Otherwise store current element with its index in the map
+- Time Complexity: O(n)
+- Space Complexity: O(n)

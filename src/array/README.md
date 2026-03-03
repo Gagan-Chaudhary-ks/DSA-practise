@@ -148,3 +148,14 @@
   - Otherwise store current element with its index in the map
 - Time Complexity: O(n)
 - Space Complexity: O(n)
+
+---
+
+### 14. Build Prefix Sum Array
+- Approach: Cumulative summation
+- Idea:
+  - prefix[0] = arr[0]
+  - prefix[i] = prefix[i-1] + arr[i]
+  - Reuse previous computation instead of recomputing sum
+- Time Complexity: O(n)
+- Space Complexity: O(n)

@@ -159,3 +159,18 @@
   - Reuse previous computation instead of recomputing sum
 - Time Complexity: O(n)
 - Space Complexity: O(n)
+
+---
+
+### 14. Range Sum Query (Prefix Sum)
+- Approach: Prefix sum preprocessing
+- Idea:
+  - First build prefix array where `prefix[i] = arr[0] + ... + arr[i]`
+  - For any query from index `L` to `R`:
+    - If `L == 0` → sum = `prefix[R]`
+    - Otherwise → sum = `prefix[R] - prefix[L-1]`
+  - This allows answering range sum queries in constant time
+- Time Complexity:
+  - Prefix construction: O(n)
+  - Each query: O(1)
+- Space Complexity: O(n)

@@ -174,3 +174,13 @@
   - Prefix construction: O(n)
   - Each query: O(1)
 - Space Complexity: O(n)
+
+### 14. SubArray Sum Equals K
+- Approach: Brute-Force (Nested loop)
+- Idea:
+  - Iterate over the array -> for i -> for j 
+  - add each arr[j] in sum varriable
+  - if sum equals to K at any point -> increase count by 1
+- Time Complexity:
+  - Nested loop: O(n^2)
+- Space Complexity: O(n)

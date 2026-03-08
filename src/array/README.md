@@ -175,12 +175,16 @@
   - Each query: O(1)
 - Space Complexity: O(n)
 
-### 14. SubArray Sum Equals K
-- Approach: Brute-Force (Nested loop)
+---
+
+### 15. Subarray Sum Equals K
+- Approach: Prefix Sum + HashMap
 - Idea:
-  - Iterate over the array -> for i -> for j 
-  - add each arr[j] in sum varriable
-  - if sum equals to K at any point -> increase count by 1
-- Time Complexity:
-  - Nested loop: O(n^2)
+    - Maintain a running prefix sum while traversing the array
+    - For each element, compute `currSum`
+    - Check if `(currSum - k)` exists in the HashMap
+    - If it exists, add its frequency to the count
+    - Store/update the current prefix sum frequency in the map
+    - If prefix sum equals K then do count++
+    - Time Complexity: O(n)
 - Space Complexity: O(n)

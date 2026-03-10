@@ -188,3 +188,14 @@
     - If prefix sum equals K then do count++
     - Time Complexity: O(n)
 - Space Complexity: O(n)
+
+### 16. Longest Subarray with Sum K
+- Approach: Prefix Sum + HashMap
+- Idea:
+  - Maintain running prefix sum
+  - If `prefixSum == k`, update max length to `i + 1`
+  - Check if `(prefixSum - k)` exists in the map
+  - If yes, compute subarray length `i - index`
+  - Store the first occurrence of each prefix sum
+- Time Complexity: O(n)
+- Space Complexity: O(n)

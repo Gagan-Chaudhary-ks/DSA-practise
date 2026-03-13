@@ -199,3 +199,15 @@
   - Store the first occurrence of each prefix sum
 - Time Complexity: O(n)
 - Space Complexity: O(n)
+
+---
+### 18. Maximum Sum Subarray of Size K
+- Approach: Fixed Sliding Window
+- Idea:
+  - Maintain a window of size `k` using two pointers `i` and `j`
+  - Expand the window by adding `arr[j]` to `currSum`
+  - When window size becomes `k`, update `maxSum`
+  - Slide the window forward by subtracting `arr[i]` and incrementing `i`
+- Time Complexity: O(n)
+- Space Complexity: O(1)
+- Pattern: Fixed Sliding Window

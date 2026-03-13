@@ -162,7 +162,7 @@
 
 ---
 
-### 14. Range Sum Query (Prefix Sum)
+### 15. Range Sum Query (Prefix Sum)
 - Approach: Prefix sum preprocessing
 - Idea:
   - First build prefix array where `prefix[i] = arr[0] + ... + arr[i]`
@@ -177,7 +177,7 @@
 
 ---
 
-### 15. Subarray Sum Equals K
+### 16. Subarray Sum Equals K
 - Approach: Prefix Sum + HashMap
 - Idea:
     - Maintain a running prefix sum while traversing the array
@@ -189,7 +189,7 @@
     - Time Complexity: O(n)
 - Space Complexity: O(n)
 
-### 16. Longest Subarray with Sum K
+### 17. Longest Subarray with Sum K
 - Approach: Prefix Sum + HashMap
 - Idea:
   - Maintain running prefix sum

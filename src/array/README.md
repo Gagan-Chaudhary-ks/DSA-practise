@@ -211,3 +211,18 @@
 - Time Complexity: O(n)
 - Space Complexity: O(1)
 - Pattern: Fixed Sliding Window
+
+---
+
+### 19. First Negative Number in Every Window of Size K
+- Approach: Sliding Window + Queue
+- Idea:
+  - Maintain a window of size `k` using two pointers `i` and `j`
+  - Store indices of negative numbers in a queue
+  - When window size becomes `k`, check the queue:
+    - If empty → add `0` to result
+    - Otherwise → the first negative element is `arr[queue.peek()]`
+  - Before sliding the window, remove the index from the queue if it is leaving the window (`queue.peek() == i`)
+- Time Complexity: O(n)
+- Space Complexity: O(k)
+- Pattern: Sliding Window + Queue

@@ -13,7 +13,7 @@ public class FirstNegativeInEveryWindowOfSizeK {
         System.out.println(negNums);
     }
 
-    static ArrayList firstNegativeInWindow(int[] arr, int k) {
+    static ArrayList<Integer> firstNegativeInWindow(int[] arr, int k) {
         int i = 0;
         int j = 0;
         ArrayList <Integer> list = new ArrayList<>();

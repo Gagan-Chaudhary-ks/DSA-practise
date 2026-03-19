@@ -21,3 +21,9 @@
 * Space Complexity: O(1)
 
 ---
+### 3. Anagram
+
+* Approach: HashMap / Frequency Array
+* Idea: Count frequency of characters in first string and decrement using second string; if any character is missing or frequency becomes negative, not an anagram
+* Time Complexity: O(n)
+* Space Complexity: O(1) (using array) / O(n) (using HashMap)

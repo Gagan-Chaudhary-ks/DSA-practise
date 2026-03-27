@@ -24,3 +24,12 @@ Approach 2: Recursive
 * Space Complexity: O(n + m) (recursion stack)
 
 ---
+
+### 3. Delete Nth Node From End of List
+
+* Approach: Two Pointers (Fast & Slow)
+* Idea: Move fast pointer n steps ahead, then move both fast and slow together until fast reaches end; slow will be at node before the one to delete
+* Time Complexity: O(n)
+* Space Complexity: O(1)
+
+---

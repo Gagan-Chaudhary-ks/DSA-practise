@@ -33,3 +33,11 @@ Approach 2: Recursive
 * Space Complexity: O(1)
 
 ---
+### 4. Detect Cycle in Linked List
+
+* Approach: Floyd’s Cycle Detection (Fast & Slow Pointers)
+* Idea: Move slow pointer one step and fast pointer two steps; if they meet at any point, a cycle exists
+* Time Complexity: O(n)
+* Space Complexity: O(1)
+
+---

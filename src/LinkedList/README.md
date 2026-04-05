@@ -41,3 +41,9 @@ Approach 2: Recursive
 * Space Complexity: O(1)
 
 ---
+### 5. Check if a Linked List is palindrome
+
+* Approach: Reverse Second Half & Compare
+* Idea: Find the middle using slow and fast pointers, reverse the second half, and compare both halves
+* Time Complexity: O(n)
+* Space Complexity: O(1)
